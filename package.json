@@ -1,0 +1,29 @@
+{
+"name": "leetcode-local-runner",
+  "version": "1.0.0",
+  "description": "Auto-run LeetCode Java solutions locally without modifying Solution.java",
+  "bin": {
+    "leetcode-watch": "./lc-watch.js"
+  },
+  "scripts": {
+    "start": "node watch-leetcode.js"
+  },
+  "keywords": [
+    "leetcode",
+    "java",
+    "cli",
+    "algorithm",
+    "competitive-programming",
+    "local-runner"
+  ],
+  "author": "Chinh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minhchinhdo/leetcode-local-runner.git"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+
+}
