@@ -10,7 +10,7 @@ A cross-platform CLI tool to automatically compile and run **LeetCode Java solut
 
 ---
 
-## ✨ Features
+## Features
 
 -   **File Watching**: Automatically detects changes in any `Solution.java` file.
 -   **Code Generation**: Automatically generates a runnable `Main.java` file.
@@ -22,7 +22,7 @@ A cross-platform CLI tool to automatically compile and run **LeetCode Java solut
 
 ---
 
-## 📦 Installation
+## Installation
 
 You can install the tool globally via npm, which is the recommended approach.
 
@@ -38,7 +38,7 @@ npm install --save-dev leetcode-local-runner
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1.  Open your terminal or command prompt.
 2.  Navigate to the directory containing your LeetCode problem folders (each with a `Solution.java`).
@@ -105,10 +105,10 @@ This design means you don't have to worry about managing classpaths or writing a
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to open a Pull Request or an Issue to discuss any changes.
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
