@@ -21,6 +21,7 @@ A cross-platform CLI tool to automatically compile and run **LeetCode Java solut
 -   **Stable Polling**: Uses a reliable polling mechanism to watch for file changes.
 
 ---
+<img width="744" height="490" alt="image" src="https://github.com/user-attachments/assets/1393d62d-78c5-47b2-bddf-8d44a0aefe42" />
 
 ## Installation
 
