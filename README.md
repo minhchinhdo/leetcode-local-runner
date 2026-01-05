@@ -56,7 +56,56 @@ Now you can focus on writing your solution and see the results instantly!
 
 ---
 
-## 🔧 How It Works
+### Why This Tool Exists
+
+The official VS Code LeetCode extension, with over 1.2 million downloads, is excellent for:
+
+- Browsing problems
+- Writing solutions
+- Submitting to LeetCode
+
+But it does not provide a stable local Java runner without:
+
+- Editing ``Solution.java``
+- Writing custom `main()` methods
+- Fighting classpath / package issues
+
+ **LeetCode Local Runner solves exactly that, while staying 100% compatible with the extension.**
+
+---
+
+Required VS Code Configuration
+
+To ensure zero conflicts between the extension and this runner, add the following to your settings.json:
+
+```json
+{
+  "leetcode.hint.configWebviewMarkdown": false,
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.filePath": {
+    "default": {
+      "folder": "${id}.${name}",
+      "filename": "Solution.${ext}"
+    }
+  }
+}
+```
+
+### Why These Settings Matter
+| Setting | Reason |
+| :--- | :--- |
+| `Solution.java` filename | Required for automatic detection |
+| Stable folder naming | Ensures watcher works correctly |
+| Disable inline hints | Prevents file rewrite / cursor shifts |
+| No markdown hints | Avoids unintended code injection |
+
+With this configuration, both tools coexist perfectly.
+
+---
+
+## How It Works
 
 The script works by parsing your `Solution.java` file to understand its structure. It then generates a complete, runnable `Main.java` file that wraps your code.
 
@@ -108,6 +157,8 @@ This design means you don't have to worry about managing classpaths or writing a
 ##  Contributing
 
 Contributions are welcome! Please feel free to open a Pull Request or an Issue to discuss any changes.
+
+---
 
 ##  License
 
